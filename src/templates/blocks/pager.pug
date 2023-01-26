@@ -1,0 +1,8 @@
+.pager 
+	a(href="").pager__prev
+	ul 
+		- for(var i = 1; i < 6; i++)
+			li 
+				a(href="", class=(i == 1 ? 'active' : ''))=i
+			
+	a(href="").pager__next 
