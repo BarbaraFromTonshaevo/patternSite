@@ -1,0 +1,57 @@
+// общие стили и контейнер
+*{
+	-webkit-tap-highlight-color: transparent;
+	box-sizing: border-box;
+}
+
+
+html, body{
+	font-family: $font;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: $black;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+body{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.footer{
+	margin-top: auto;
+}
+ul, ol{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin-top: 0;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+img{
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+}
+
+.container{
+	max-width: 1600px;
+	width: 100%;
+	padding: 0 calc((1600px - $containerWidth)/2);
+	margin: 0 auto;
+	position: relative;
+	@media (max-width: 767px) {
+		padding: 0 15px;
+	}
+	@media (max-width: 767px) {
+		padding: 0 10px;
+	}
+}

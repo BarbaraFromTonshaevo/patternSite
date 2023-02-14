@@ -1,0 +1,11 @@
+// стили таблицы
+.table-wrap{
+	width: calc(100% + 30px);
+	overflow-x: auto;
+	padding-left: 15px;
+	margin-left: -15px;
+	padding-right: 15px;
+	table{
+	   width: 600px;
+	}
+}

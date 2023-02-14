@@ -1,0 +1,95 @@
+// стили постраничной навигации/хлебные крошки 
+.top{
+	background-color: #f4f2ef;
+	padding: 55px 0;
+	margin-bottom: 70px;
+}
+.breadcrumbs{
+	li{
+		display: inline;
+		a, span{
+			font-style: italic;
+		}
+		a{
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		span{
+			color: #7f797c;
+		}
+		&:not(:last-child):after{
+			content: "";
+			display: inline-block;
+			width: 10px;
+			height: 1px;
+			background-color: #7f797c;
+			opacity: 0.8;
+			margin: 0 6px 0 8px;
+			position: relative;
+			top: -3px;
+		}
+	}
+	
+}
+.page-title{
+	font-size: 38px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	margin-top: 28px;
+}
+.pager{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	a{
+		width: 32px;
+		height: 32px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 16px;
+		color: white;
+		background-color: lightgray;
+		transition: background-color 0.3s;
+		&:hover{
+			background-color: gray;
+		}
+		&.active{
+			background-color: black;
+		}
+	}
+	&__prev,
+	&__next{
+		padding-bottom: 2px;
+		&:after{
+			font-size: 22px;
+		}
+	}
+	&__prev{
+		&:after{
+			content: "\2039";
+		}
+	}
+	&__next{
+		&:after{
+			content: "\203A";
+		}
+	}
+	ul{
+		display: flex;
+		margin: 0 20px;
+		li{
+			margin-right: 10px;
+			&:last-child{
+				margin-right: 0;
+			}
+			a{
+				padding-top: 1px;
+			}
+		}
+	}
+}
+
+

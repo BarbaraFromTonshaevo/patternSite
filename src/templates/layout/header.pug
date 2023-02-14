@@ -8,10 +8,10 @@ header.header
 //-ul.header__menu
 	each item in menu
 		li(class=(item.submenu?'expanded':''))
-			a(href=item.link)=item.text
+			a(href=item.href)=item.text
 
 			if item.submenu
 				ul.header__sub-menu
 					each subitem in item.submenu
 						li
-							a(href=subitem.link)=subitem.text
+							a(href=subitem.href)=subitem.text

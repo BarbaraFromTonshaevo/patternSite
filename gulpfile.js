@@ -1,7 +1,7 @@
 'use strict';
 
 var gulp = require('gulp'),
-	sass = require('gulp-sass'),
+	sass = require('gulp-sass')(require('sass')),
 	prefixer = require('gulp-autoprefixer'),
 	sourcemaps = require('gulp-sourcemaps'),
 	watch = require('gulp-watch'),

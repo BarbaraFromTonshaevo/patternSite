@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="msapplication-navbutton-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
     <title>Сайт | О компании</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/slick-slider.css">
-    <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body class="not-front">
@@ -23,7 +24,7 @@
     <footer class="footer"> 
       <div class="footer__box"></div>
     </footer>
-    <div class="window__container order-call">
+    <div class="window__container" id="order-call">
       <div class="window">
         <div class="window__close"></div>
         <h2>Заказать звонок</h2>
@@ -32,8 +33,9 @@
           <div><!-- div drupal -->
             <input class="form__field" type="text" required="required" placeholder="Ваше имя*">
           </div>
-          <div><!-- div drupal -->
+          <div class="form-item--error"><!-- div drupal -->
             <input class="form__field mask-tel" type="tel" required="required" placeholder="Телефон*">
+            <div class="form-item--error-message">Требуется заполнить это поле</div>
           </div>
           <div><!-- div drupal -->
             <input class="my-button form__button" type="submit" value="Отправить">
@@ -41,10 +43,7 @@
         </form>
       </div>
     </div>
-    <script src="js/library-jquery.js"></script>
-    <script src="js/slick-slider.js"></script>
-    <script src="js/fancybox.js"></script>
-    <script src="js/mask-tel.js"></script>
+    <script src="js/phonemask.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

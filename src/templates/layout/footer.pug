@@ -4,7 +4,7 @@ footer.footer
 		
 
 //- Окно Заказать звонок
-.window__container.order-call
+.window__container(id="order-call")
 	.window
 		.window__close
 		h2 Заказать звонок
@@ -13,8 +13,9 @@ footer.footer
 			div <!-- div drupal -->
 				input(type="text", required="required", placeholder="Ваше имя*").form__field
 
-			div <!-- div drupal -->
+			div.form-item--error <!-- div drupal -->
 				input(type="tel", required="required", placeholder="Телефон*").form__field.mask-tel
+				.form-item--error-message Требуется заполнить это поле
 
 			div <!-- div drupal -->
 				input(type="submit", value="Отправить").my-button.form__button

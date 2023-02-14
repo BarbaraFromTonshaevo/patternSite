@@ -1,0 +1,28 @@
+// стили для content
+.content{
+	p{
+		line-height: 24px;
+		margin-bottom: 15px;
+	}
+	h3{
+		
+	}
+	table{
+		width: 100%;
+		border-spacing: 0;
+		border-collapse: collapse;
+		table-layout: fixed;
+		border: 1px solid #dfe1e3;
+		td, th{
+		   border: 1px solid #dfe1e3;
+		   padding: 14px 20px;
+		}
+		th{
+			text-align: left;
+			font-weight: 700;
+		}
+	 }
+}
+strong{
+	font-weight: 700;
+}

@@ -7,10 +7,11 @@ html(lang="ru")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no")
+		meta(name="theme-color" content="#fff")
+		meta(name="msapplication-navbutton-color" content="#fff")
+		meta(name="apple-mobile-web-app-status-bar-style" content="#fff")
 		title Сайт | #{pageTitle}
 		link(rel="shortcut icon" href="img/favicon.ico" type="image/x-icon")
-		link(rel="stylesheet" href="css/slick-slider.css")
-		link(rel="stylesheet" href="css/fancybox.css")
 		link(rel="stylesheet" href="css/main.css")
 	body(class=(bodyClass?bodyClass:'not-front'))
 		
@@ -21,9 +22,6 @@ html(lang="ru")
 		include footer
 
 
-		script(src="js/library-jquery.js")
-		script(src="js/slick-slider.js")
-		script(src="js/fancybox.js")
-		script(src="js/mask-tel.js")
+		script(src="js/phonemask.js")
 		script(src="js/main.js")
 	

@@ -1,0 +1,28 @@
+// стили для повторяющих мелких элементов
+.text-hidden{
+    &-content{
+        height: 250px;
+        overflow: hidden;
+        transition: height $time;
+        .text-hidden.open &{
+            // height: auto;
+        }
+    }
+    &-btn{
+        cursor: pointer;
+        width: fit-content;
+        padding: 5px 15px;
+        border-radius: 10px;
+        background-color: red;
+        margin-top: 20px;
+        &::before{
+            content: 'Развернуть';
+            color: white;
+            font-weight: bold;
+            .text-hidden.open &{
+                content: 'Свернуть';
+            }
+        }
+    }
+    
+}
